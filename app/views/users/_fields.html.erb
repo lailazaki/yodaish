@@ -1,0 +1,30 @@
+<%= form_for(@user) do |f| %>
+
+  <%= render 'shared/error_messages', object: f.object %>
+
+<!--   <%= f.label :name %> -->
+  <%= f.text_field :name, autofocus: true, :placeholder => "Name" %>
+
+  <br>
+  <br>
+<!--   <%= f.label :email %> -->
+  <%= f.text_field :email, :placeholder => "Email" %>
+
+  <br>
+  <br>
+
+<!--   <%= f.label :password %> -->
+  <%= f.password_field :password, :placeholder => "Password" %>
+
+  <br>
+  <br>
+<!--   <%= f.label :password_confirmation, "Confirm Password" %> -->
+  <%= f.password_field :password_confirmation, :placeholder => "Confirm Password" %>
+
+  <br>
+  <br>
+  <%= f.submit 'Save' %>
+
+<% end %>
+
+

@@ -1,0 +1,22 @@
+<% provide(:title, 'Index') %>
+
+
+<section class="yoda-container">
+	<section class="picture-container"></section>
+
+	<h1 class="try-me">Try it now! Type Your Message Below</h1>
+	<section class="text-container">
+
+
+		<%= form_tag pages_path, :method => 'get' do  %>
+      <%= text_field_tag :quote, params[:quote] %>
+      <div class="form-break"></div>
+      <%= submit_tag "Yoda Me", :name => nil %>
+  	<% end %>
+
+		<div class="yoda-quote-text">
+			<%= @quote.body %>
+		</div>
+
+	</section>
+</section>

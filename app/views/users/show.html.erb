@@ -1,0 +1,23 @@
+<% provide(:title, @user.name) %>
+<section class="user-profile">
+
+
+
+<section class="yoda-profile-container">
+	<div></div>
+</section>
+
+<section class="text-container">
+
+<%= form_tag user_path, :method => 'get' do  %>
+      <%= text_field_tag :quote, params[:quote]  %>
+      <div class="form-break"></div>
+      <%= submit_tag "Yoda Me", :name => nil %>
+  <% end %>
+
+    <div class="yoda-quote-text">
+      <%= @quote.body %>
+    </div>
+
+</section>
+</section>

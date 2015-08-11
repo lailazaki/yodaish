@@ -1,0 +1,595 @@
+@import url(http://fonts.googleapis.com/css?family=Droid+Sans:400,700);
+
+body {
+	background-color: #000;
+	width: 100%;
+	height: auto;
+	font-family: "Droid Sans", arial, verdana, sans-serif;
+	font-size: 20px;
+	color: #ff6;
+}
+.main {
+	font-size: 1.4em;
+	text-align: center;
+	line-height: 0.8em;
+	letter-spacing: -0.05em;
+	color: #000;
+	text-shadow: -2px -2px 0 #ff6, 2px -2px 0 #ff6, -2px 2px 0 #ff6, 2px 2px 0 #ff6;
+}
+.main:hover {
+	text-decoration: none;
+	color: #ff6;
+}
+.try-me {
+	width: 50%;
+	float: left;
+	margin-left: 3%;
+	margin-top: 100px;
+	text-align: center;
+	color: #ff6;
+}
+.container nav {
+	padding-top: 42px;
+}
+
+/*       SIGN-UP AND SIGN-IN     */
+
+.signup, .signin	{
+	width: 45%;
+	height: 400px;
+	margin: 0 auto;
+	color: #000;
+}
+.center {
+	text-align: center;
+	color: #000;
+}
+.signup input, .signin input  {
+	width: 60%;
+	padding-left: 10px;
+	margin-top:10px;
+}
+.signin .center h1, .signup .center h1, .edit h1 {
+	text-align: center;
+	color: #ff6;
+}
+
+.signin .signin-yoda	{
+	width: 45%;
+	height: 400px;
+	background: url(yodaing.png) no-repeat;
+	background-size: 85% 350px;
+	background-position: center bottom;
+	float: left;
+}
+
+.yoda-container {
+	width: 100%;
+	height: auto;
+}
+
+.form-break { padding: 10px;}
+.picture-container{
+	width: 45%;
+	float: left;
+	max-width: 400px;
+	height: 500px;
+	margin: 0 auto;
+	background: url(yoda2.png) no-repeat;
+	background-size: 85% 500px;
+	background-position: center bottom;
+}
+.text-container {
+	width: 50%;
+	float: left;
+	margin-left: 3%;
+	margin-top: 20px;
+	text-align: center;
+	color: #000;
+}
+
+
+.yoda-quote-text {
+	font-size: 55px;
+	color: #ff6;
+	padding: 30px 0;
+	line-height: 60px;
+}
+
+
+.container {
+	width: 95%;
+}
+
+.container h1	{
+	float: left;
+	margin-bottom: 0;	
+}
+nav, nav ul {width: 100%; margin: 0 auto 40px auto;}
+nav ul li	{display: inline; list-style: none;}
+nav a {
+	text-decoration: none;
+	margin: 20px;
+	color: #fdd017;
+}
+
+.container nav {float: left; 
+	margin: 0; 
+	padding: 0; 
+	height: 50px; 
+	padding-bottom:10px;
+	width: 100%;
+}
+.navbar-default {
+	background-color: transparent;
+}
+.user-profile h4 { color: #fff;}
+.user-profile .text-container { 
+	position: absolute;
+	right: 50px;
+	top: 310px;
+}
+.user-profile .yoda-profile-container{
+	position: absolute;
+	width: 400px;
+	height: 390px;
+	background: url(yodaman.png) no-repeat;
+	background-size: 100% 100%;
+	background-position: center;
+	top: 250px;
+}
+
+.user-profile .yoda-profile-container div {
+	background: url(eyes.png) no-repeat;
+	width: 208px;
+	height: 48px;
+	position: absolute;
+	background-size: 100% 100%;
+	top:101px;
+	left:99px;
+	-webkit-animation: ani-blink 7s linear infinite;
+}
+
+
+/*             ABOUT PAGE          */
+
+* { padding: 0; margin: 0; }
+
+.about body, .about html {
+	width: 100%;
+	height: 100%;
+	font-weight: 700;
+	color: #ff6;
+	background-color: #000;
+	overflow: hidden;
+}
+
+.about p#start {
+	position: relative;
+	width: 16em;
+	font-size: 200%;
+	font-weight: 400;
+	margin: 20% auto;
+	color: #4ee;
+	opacity: 0;
+	z-index: 1;
+	-webkit-animation: intro 2s ease-out;
+	-moz-animation: intro 2s ease-out;
+	-ms-animation: intro 2s ease-out;
+	-o-animation: intro 2s ease-out;
+	animation: intro 2s ease-out;
+}
+
+@-webkit-keyframes intro {
+	0% { opacity: 1; }
+	90% { opacity: 1; }
+	100% { opacity: 0; }
+}
+
+@-moz-keyframes intro {
+	0% { opacity: 1; }
+	90% { opacity: 1; }
+	100% { opacity: 0; }
+}
+
+@-ms-keyframes intro {
+	0% { opacity: 1; }
+	90% { opacity: 1; }
+	100% { opacity: 0; }
+}
+
+@-o-keyframes intro {
+	0% { opacity: 1; }
+	90% { opacity: 1; }
+	100% { opacity: 0; }
+}
+
+@keyframes intro {
+	0% { opacity: 1; }
+	90% { opacity: 1; }
+	100% { opacity: 0; }
+}
+
+.about h1
+{
+	position: absolute;
+	width: 2.6em;
+	left: 50%;
+	top: 25%;
+	font-size: 15em;
+	text-align: center;
+	margin-left: -1.3em;
+	line-height: 0.8em;
+	letter-spacing: -0.05em;
+	color: #000;
+	text-shadow: -2px -2px 0 #ff6, 2px -2px 0 #ff6, -2px 2px 0 #ff6, 2px 2px 0 #ff6;
+	opacity: 0;
+	z-index: 1;
+	-webkit-animation: logo 5s ease-out 2.5s;
+	-moz-animation: logo 5s ease-out 2.5s;
+	-ms-animation: logo 5s ease-out 2.5s;
+	-o-animation: logo 5s ease-out 2.5s;
+	animation: logo 5s ease-out 2.5s;
+}
+
+.about h1 sub
+{
+	display: block;
+	font-size: 0.3em;
+	letter-spacing: 0;
+	line-height: 0.8em;
+}
+
+@-webkit-keyframes logo {
+	0% { -webkit-transform: scale(1); opacity: 1; }
+	50% { opacity: 1; }
+	100% { -webkit-transform: scale(0.1); opacity: 0; }
+}
+
+@-moz-keyframes logo {
+	0% { -moz-transform: scale(1); opacity: 1; }
+	50% { opacity: 1; }
+	100% { -moz-transform: scale(0.1); opacity: 0; }
+}
+
+@-ms-keyframes logo {
+	0% { -ms-transform: scale(1); opacity: 1; }
+	50% { opacity: 1; }
+	100% { -ms-transform: scale(0.1); opacity: 0; }
+}
+
+@-o-keyframes logo {
+	0% { -o-transform: scale(1); opacity: 1; }
+	50% { opacity: 1; }
+	100% { -o-transform: scale(0.1); opacity: 0; }
+}
+
+@keyframes logo {
+	0% { transform: scale(1); opacity: 1; }
+	50% { opacity: 1; }
+	100% { transform: scale(0.1); opacity: 0; }
+}
+
+/*  3D scrolling stuff */
+.about #titles
+{
+	position: absolute;
+	width: 18em;
+	height: 50em;
+	bottom: 0;
+	left: 50%;
+	margin-left: -9em;
+	font-size: 4em;
+	line-height: 1.7em;
+	text-align: justify;
+	overflow: hidden;
+	-webkit-transform-origin: 50% 100%;
+	-moz-transform-origin: 50% 100%;
+	-ms-transform-origin: 50% 100%;
+	-o-transform-origin: 50% 100%;
+	transform-origin: 50% 100%;
+	-webkit-transform: perspective(300px) rotateX(18deg);
+	-moz-transform: perspective(300px) rotateX(18deg);
+	-ms-transform: perspective(300px) rotateX(18deg);
+	-o-transform: perspective(300px) rotateX(18deg);
+	transform: perspective(300px) rotateX(18deg);
+}
+
+.about #titles:after
+{
+	position: absolute;
+	content: ' ';
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 60%;
+	background-image: -webkit-linear-gradient(top, rgba(0,0,0,1) 0%, transparent 100%);
+	background-image: -moz-linear-gradient(top, rgba(0,0,0,1) 0%, transparent 100%);
+	background-image: -ms-linear-gradient(top, rgba(0,0,0,1) 0%, transparent 100%);
+	background-image: -o-linear-gradient(top, rgba(0,0,0,1) 0%, transparent 100%);
+	background-image: linear-gradient(top, rgba(0,0,0,1) 0%, transparent 100%);
+	pointer-events: none;
+}
+
+.about #titles p
+{
+	text-align: justify;
+	margin: 0.8em 0;
+}
+
+.about #titles p.center
+{
+	text-align: center;
+	color: #ff6;
+}
+
+.about #titlecontent
+{
+	position: absolute;
+	top: 100%;
+	-webkit-animation: scroll 100s linear 4s infinite;
+	-moz-animation: scroll 100s linear 4s infinite;
+	-ms-animation: scroll 100s linear 4s infinite;
+	-o-animation: scroll 100s linear 4s infinite;
+	animation: scroll 100s linear 4s infinite;
+}
+
+/* animation */
+@-webkit-keyframes scroll {
+	0% { top: 100%; }
+	100% { top: -170%; }
+}
+
+@-moz-keyframes scroll {
+	0% { top: 100%; }
+	100% { top: -170%; }
+}
+
+@-ms-keyframes scroll {
+	0% { top: 100%; }
+	100% { top: -170%; }
+}
+
+@-o-keyframes scroll {
+	0% { top: 100%; }
+	100% { top: -170%; }
+}
+
+@keyframes scroll {
+	0% { top: 100%; }
+	100% { top: -170%; }
+}
+
+
+
+
+
+
+/*             RANDOM PAGE          */
+
+.cover {
+	margin: -193px auto 0 auto;
+	width: 1300px;
+	height: 950px;
+	overflow: hidden;
+	background-color: #011236;
+	overflow: hidden;
+}
+/*             GROUND/PLANET STUFF          */
+
+.layout {
+	width: 1300px;
+	height: 900px;
+	background: url(swstars.png) no-repeat;
+	background-size: 100% 90%;
+	position:relative;
+}
+.ground {
+	bottom: 0;
+	background: url(swground.png);
+	width: 1300px;
+	height: 300px;
+	z-index: 5;
+}
+
+.robot {
+	background: url(swrobot.png);
+	width: 405px;
+	height: 360px;
+	z-index: 10;
+	right: 135px;
+	bottom:25px;
+
+}
+
+.leg {
+	background: url(swleg.png);
+	width: 100px;
+	height: 239px;
+	z-index: 10;
+	right: 284px;
+	bottom:34px;
+	-webkit-animation: ani-leg 10s linear infinite;
+}
+
+.fighter {
+	background: url(swfighter.png);
+	width: 20px;
+	height: 30px;
+	z-index: 10;
+	bottom: 25px;
+	right:360px;
+	-webkit-animation: ani-fighter 10s linear infinite;
+}
+
+.big-planet {
+	background: url(swbigplanet.png);
+	width: 1200px;
+	height: 650px;
+	z-index: 3;
+	bottom: 0px;
+	left:40px;
+}
+
+.black-planet {
+	background: url(swblackplanet.png);
+	width: 300px;
+	height: 300px;
+	z-index: 2;
+	top: 180px;
+	left:40px;
+}
+
+.black-planet-star1, .black-planet-star2 {
+	background: url(swblackplanetstar1.png);
+	width: 260px;
+	height: 150px;
+	z-index: 2;
+	top: 240px;
+	left:40px;
+	-webkit-animation: ani-blackplanetstarone 3s linear infinite;
+}
+.black-planet-star2 {
+	background: url(swblackplanetstar2.png);
+	-webkit-animation: ani-blackplanetstartwo 3s linear infinite;
+}
+
+.smoke-one, .smoke-two {
+	background: url(swsmoke.png);
+	width: 2500px;
+	height: 160px;
+	z-index: 4;
+	bottom: 170px;
+}
+.smoke-one {
+	-webkit-animation: ani-smokeone 15s linear infinite;
+}
+
+
+
+.ground, .robot, .leg, .big-planet, .black-planet, .fighter, 
+.smoke-one, .smoke-two, .smoke-three, .smoke-four,
+.black-planet-star1, .black-planet-star2	{	
+	position: absolute;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
+
+/*             FLYING STUFF            */
+
+
+.jet-one, .jet-two	{
+	background: url(swjet1.png);
+	width: 95px;
+	height: 95px;
+	top: 200px;
+	left: 0;
+}
+.jet-one {
+		-webkit-animation: ani-jetone  15s linear infinite;
+}
+
+.jet-two {
+	background: url(swjet12.png);
+	right: 0;
+		-webkit-animation: ani-jettwo  6s linear infinite;
+}
+
+.jet-five, .jet-six{
+	background: url(swjet2.png);
+	width: 150px;
+	height: 105px;
+	top: 650px;
+	left: 150px;
+	-webkit-animation: ani-jetfive  10s linear infinite;
+}
+
+.jet-six{
+	-webkit-animation: ani-jetsix  6s linear infinite;
+}
+.jet-nine	{
+	background: url(swjet3.png);
+	width: 140px;
+	height: 85px;
+	top: 500px;
+	left: 200px;
+	-webkit-animation: ani-jetnine  10s linear infinite;
+}
+
+.jet-thirteen 	{
+	background: url(swspaceballs.png);
+	width: 200px;
+	height: 120px;
+	top: 600px;
+	left: 300px;
+	z-index: 50;
+	-webkit-animation: ani-jetthirteen  15s linear infinite;
+}
+
+.jet-one, .jet-two, .jet-three, .jet-four, .jet-five, .jet-six,
+ .jet-seven, .jet-eight, .jet-nine, .jet-ten, .jet-eleven, 
+ .jet-twelve, .jet-thirteen {
+	position: absolute;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
+
+
+
+/*             FIRING SQUAD            */
+
+.ground-fire-one, .ground-fire-two, .ground-fire-three, .ground-fire-four,
+.ground-fire-five, .ground-fire-six, .ground-fire-seven,  .ground-fire-eight,
+.ground-fire-nine, .ground-fire-ten, .ground-fire-eleven, .ground-fire-twelve,
+.ground-fire-thirteen, .ground-fire-fourteen, .ground-fire-fifteen {
+ 	position: absolute;
+ 	width: 4px;
+ 	height: 2px;
+ 	background-color: #e52929;
+ 	opacity: .7;
+ 	box-shadow: 0px 0px 2px 0px #e52929;
+ 	left: 458px;
+ 	bottom: 50px;
+ 	z-index: 15;
+ 	-webkit-animation: ani-fireone  5s linear infinite;
+}
+
+.ground-fire-two {bottom: 68px; left: 518px;	-webkit-animation: ani-firetwo  5s linear infinite;}
+.ground-fire-three {bottom: 74px; left:345px ;	-webkit-animation: ani-firethree  5s linear infinite;}
+.ground-fire-four {bottom: 139px; left: 567px ;	-webkit-animation: ani-firefour  5s linear infinite;}
+.ground-fire-five {bottom: 79px; left: 254px;	-webkit-animation: ani-firefive  5s linear infinite;}
+.ground-fire-six {bottom: 79px; left: 230px;	-webkit-animation: ani-firesix  5s linear infinite;}
+.ground-fire-seven {bottom: 106px; left: 549px;	-webkit-animation: ani-fireseven  5s linear infinite;}
+.ground-fire-eight {bottom: 55px; left: 194px;	-webkit-animation: ani-fireeight  5s linear infinite;}
+
+.ground-fire-nine {bottom: 42px;-webkit-animation: ani-firenine  5s linear infinite;}
+.ground-fire-ten {bottom: 49px;-webkit-animation: ani-fireten  5s linear infinite;}
+.ground-fire-eleven {bottom: 36px; ;-webkit-animation: ani-fireeleven  5s linear infinite;}
+.ground-fire-twelve {bottom:90px;-webkit-animation: ani-firetwelve  5s linear infinite;}
+.ground-fire-thirteen {bottom: 126px; -webkit-animation: ani-firethirteen  5s linear infinite;}
+.ground-fire-fourteen {bottom: 268px; -webkit-animation: ani-firefourteen  5s linear infinite;}
+.ground-fire-fifteen {bottom: 249px; -webkit-animation: ani-firefifteen  5s linear infinite;}
+
+
+
+.fire-one {
+	position: absolute;
+ 	width: 4px;
+ 	height: 2px;
+ 	background-color: #e52929;
+ 	opacity: .7;
+ 	box-shadow: 0px 0px 2px 0px #e52929;
+ 	z-index: 15;
+ 	-webkit-animation: ani-jetfireone  15s linear infinite;
+}
+
+
+
+
+
+
+
+
+
+
+
